@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Define the directory containing the scripts (change this to your script location)
+SCRIPT_DIR="$HOME/.scritps/dwm/"
+
+# List all scripts in the directory and display them using dmenu
+SELECTED_SCRIPT=$(ls "$SCRIPT_DIR" | dmenu -fn "Terminus-12" -l 8 -p "Select a script:")
+
+# Check if a script was selected
+if [[ -n "$SELECTED_SCRIPT" ]]; then
+    # Execute the selected script
+    "$SCRIPT_DIR/$SELECTED_SCRIPT"
+else
+    echo "No script selected."
+fi
+

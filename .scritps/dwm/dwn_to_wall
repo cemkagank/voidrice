@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mv -v dwn/*.png pix/wall/ | notify-send "Move Completed" "$(wc -l) items have been moved to wallpaper folder" 

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ffplay -window_title webcam /dev/video0
