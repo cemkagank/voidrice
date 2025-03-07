@@ -1,0 +1,5 @@
+require("options")
+require("plugins")
+require("keymaps")
+require("nf")
+--vim.cmd.colorscheme("gruvbox-material")
